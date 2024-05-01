@@ -2,6 +2,12 @@ name: "my first github action"
 description: "this is my first gh action"
 author: "Mikhail Bondarevsky"
 
+inputs:
+  name:
+    description: "The name to say hello to"
+    required: true
+    default: "World"
+
 runs:
   using: "node16"
   main: "dist/index.js"

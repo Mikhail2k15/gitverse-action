@@ -1,9 +1,9 @@
-# For more samples to get started with GitHub Action workflows 
+# For more samples to get started with GitHub Action workflows
 
 name: Hello world GH Action workflow
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
 
 env:
   TEST: test
@@ -13,4 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./
+
+      - name: Test my custom gh action
+        uses: ./
+        with:
+          name: "Michael"
