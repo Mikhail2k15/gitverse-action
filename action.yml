@@ -1,0 +1,7 @@
+name: "my first github action"
+description: "this is my first gh action"
+author: "Mikhail Bondarevsky"
+
+runs:
+  using: "node16"
+  main: "dist/index.js"
